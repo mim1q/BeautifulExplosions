@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "beautiful_explosions",
+  "name": "Beautiful Explosions",
+  "description": "Adds alternative explosion animation, based on Minecraft Legends footage.",
+  "version": "${version}",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.mim1q.beautifulexplosions.BeautifulExplosions"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": ">=0.58.0",
+    "minecraft": "1.19.*"
+  }
+}
