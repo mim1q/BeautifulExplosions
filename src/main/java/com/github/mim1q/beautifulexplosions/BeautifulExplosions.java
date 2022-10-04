@@ -1,5 +1,6 @@
 package com.github.mim1q.beautifulexplosions;
 
+import com.github.mim1q.beautifulexplosions.particle.ModParticles;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
@@ -12,9 +13,10 @@ public class BeautifulExplosions implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
     LOGGER.info("Initializing Beautiful Explosions by mim1q");
+    ModParticles.init();
   }
 
-  public Identifier id(String path) {
+  public static Identifier id(String path) {
     return new Identifier(MOD_ID, path);
   }
 }
